@@ -4,10 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<title>LINUX INTRO WORKSHOP</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -66,12 +63,13 @@
                                         </p>
                                         </section>
                                 </section>
+
                                 <section>
                                         <section>
                                         <h3>cp (copy)</h3>
                                         <p>
                                         Eine Datei kopieren.<br>
-                                        <b> $ cp original kopie</b>
+                                        <b>$ cp original kopie</b>
                                         </p>
                                         </section>
 
@@ -88,8 +86,115 @@
 
                                 </section>
 
-			<!-- LUCIA END -->
+				<section>
+                                        <section>
+                                        	<h3>rm (remove)</h3>
+                                        	<p>Eine Datei löschen.</p>
+                                        	<p><b>$ rm textdatei1.txt</b></p>
+						<p><i>-r recursive</i></p>
+						<p><b>$ rm -r testordner</b></p>
+                                        </section>
 
+                                        <section>
+                	                        <h3>rmdir ("remove directories")</h3>
+        	                                <p>Dieser Befehl löscht Verzeichnisse. Allerdings nur wenn sie leer sind.</p>
+	                                        <p><b>$ rmdir leererOrdner</b></p>
+                                        </section>
+
+                                </section>
+
+				<section>
+                                        <section>
+                                        	<h3>* (wildcard)</h3>
+                                        	<p>Platzhalter für beliebige Zeichen.</p>
+						<p><b>$ mv * ordner/ </b></p>
+                                        </section>
+                                </section>
+
+
+				<section>
+                                        <h2>Textdateien schreiben & lesen</h2>
+                                </section>
+
+				<section>
+                                        <section>
+                                        	<h3>nano</h3>
+                                        	<p>Den Inhalt eines Files bearbeiten / Text reinschreiben.</p>
+						<p><b>$ nano erste-datei.txt</b></p>
+						<p>^X --> [Strg + x] drücken</p>
+                                        </section>
+                                </section>
+
+				<section>
+                                        <section>
+                                        	<h3>cat</h3>
+                                        	<p>Den Inhalt eines (oder mehrerer) Files ausgeben.</p>
+						<p><b>$ cat erste-datei.txt</b></p>
+						<p>^X --> [Strg + x] drücken</p>
+					</section>
+					<section>
+						<p>"con<b>cat</b>enate files and print on the standard output"<br>
+						"concatenate" heißt "aneinander ketten".<br>
+						<b>$ cat erste-datei.txt erste-datei.txt erste-datei.txt erste-datei.txt</b></p>
+                                        </section>
+                                </section>
+
+				<section style="text-align:left;">
+					man&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- zeigt manual zum command<br>
+					<br>
+					ls&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- listet verzeichnisinhalt auf<br>
+					pwd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- print working directory  - wo ich grad bin<br>
+					cd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- change directory  - ordner wechseln<br>
+					<br>
+					touch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- datei "berühren" oder erzeugen<br>
+					mkdir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- make directories<br>
+					rmdir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- remove directories<br>
+					rm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- remove files<br>
+					cp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- copy vonA nachB<br>
+					mv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- move vonA nachB<br>
+					<br>
+					nano&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- texteditor   ( ^X  bedeutet Strg+x )<br>
+					cat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- inhalt eines (oder mehrerer) files ausgeben<br>
+                                </section>
+
+                                <section>
+					<h2>try it!</h2>
+					<p style="text-align:left;">
+					* Einen "Workshop" Ordner anlegen.<br>
+					* Mit touch, nano, cp, mv ein paar Textdateien erstellen.<br>
+					* Wie ändert sich die Größe einer Textdatei bevor und nachdem ich etwas reingeschrieben habe?<br>
+					* Was passiert, wenn ich eine Datei mit "move" umbenenne und es den Namen aber schon gibt?<br>
+					</p>
+                                </section>
+
+
+				<section>
+					<h2>Paketverwaltung</h2>
+
+					<p>
+					apt search<br>
+					apt show<br>
+					<br>
+					apt install<br>
+					<br>
+					apt update<br>
+					apt upgrade<br>
+					<br>
+					apt remove<br>
+					apt autoremove<br>
+					</p>
+				</section>
+
+                                <section>
+					<h2>try it!</h2>
+					<p>
+					* Das Programm htop installieren.<br>
+					* Schauen was in /etc/sources.list steht.
+					</p>
+                                </section>
+
+
+			<!-- LUCIA END -->
 
 
 			<!-- END DIV "SLIDES" -->
